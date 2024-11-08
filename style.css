@@ -86,3 +86,25 @@ button:hover{
     box-shadow: var(--orange_shadow);
     background-color: var(--primary_color);
 }
+
+.showcase{
+    padding-top: 30px;
+}
+
+
+
+.welcoming{
+    flex: 1;
+}
+
+
+.welcoming h1{
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+.welcoming p{
+    margin-bottom: 30px;
+}
+.welcoming span{
+    color: var(--primary_color);
+}
