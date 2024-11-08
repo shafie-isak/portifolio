@@ -108,3 +108,85 @@ button:hover{
 .welcoming span{
     color: var(--primary_color);
 }
+
+
+
+
+
+.services{
+    background-color: var(--secondary_color);
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services h1{
+    max-width: 100px;
+    color: var(--primary_color);
+    text-align: center;
+    border-bottom: var(--border);
+    margin-bottom: 20px;
+}
+
+.services .row{
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.card{
+    padding: 15px;
+    border: var(--border);
+    max-width: 220px;
+    border-radius: 10px;
+    background-color: var(--secondary_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.card .icon{
+    width: 100px;
+    height: 100px;
+    background-color: var(--white);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i_design{
+    font-size: 35px;
+    color: var(--secondary_color);
+}
+
+.card h3, .card p{
+    text-align: center;
+    color: var(--white);
+    margin-top: 10px;
+}
+
+.card h3{
+    color: var(--primary_color);
+}
+.card:hover{
+    box-shadow: var(--orange_shadow);
+}
+.card .desc a{
+     color: #4677ff;
+}
+
+.card button{
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--primary_color);
+}
+.card button:hover{
+    color: var(--secondary_color);
+    background-color: var(--primary_color);
+
+}
+
+
