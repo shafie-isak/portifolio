@@ -30,7 +30,7 @@ header{
 
 .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
     flex-wrap: wrap;
@@ -239,4 +239,53 @@ button:hover{
     color: var(--white);
     background-color: var(--secondary_color);
     transition: all 0.4s;
+}
+
+.my_skills{
+    padding: 20px;
+    background-color: var(--secondary_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my_skills h1{
+    color: var(--primary_color);
+    border-bottom: var(--orange_border );
+    margin: 20px 0px;
+}
+
+.my_skills p{
+    color: var(--white);
+    margin-top: 50px;
+    text-align: start;
+    background-color: var(--primary_color);
+}
+
+.my_skills .card2{
+    background-color: transparent;
+    min-width: 140px;
+    min-height: 140px;
+}
+
+.my_skills .card2 .icon{
+    width: 70px;
+    height: 70px;
+}
+
+.my_skills .card2:hover{
+    background-color: var(--white);
+    .icon{
+        background-color: var(--primary_color);
+    }
+    h4{
+        color: var(--secondary_color);
+    }
+  
+}
+
+.my_skills .card2 h4{
+    margin-top: 20px;
+    color: var(--primary_color);
 }
