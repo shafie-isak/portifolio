@@ -96,8 +96,14 @@ button:hover{
 }
 
 .showcase{
-    padding-top: 30px;
+    background-image: url(images/showcase_bg.jpg);
+    background-position: center;
+    background-size: cover;
 }
+.showcase .row{
+    padding: 0;
+}
+
 
 .welcoming{
     flex: 1;
@@ -121,7 +127,8 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary_color);
+    background: linear-gradient( rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)),url('images/bg.png');
+    background-position: center;
 }
 
 .about .row {
@@ -129,6 +136,7 @@ button:hover{
     justify-content: space-between;
     align-items: center; 
     gap: 20px; 
+    padding: 0;
 }
 
 .about h1{
@@ -137,11 +145,7 @@ button:hover{
     border-bottom: var(--orange_border);
 }
 
-.about img {
-    width: 300px;
-    flex: 1;
-    height: auto; 
-}
+
 
 .myInfo {
     flex: 1;
@@ -156,12 +160,16 @@ button:hover{
 }
 
 .s_media {
-    margin-top: 20px;
     padding: 10px;
     border-radius: 50%;
     background-color: var(--primary_color);
     color: var(--secondary_color);
     margin-right: 10px;
+}
+
+.s_media:hover{
+    background-color: var(--white);
+    transition: all 0.4s;
 }
 
 
@@ -250,7 +258,9 @@ button:hover{
 
 .my_skills{
     padding: 20px;
-    background-color: var(--secondary_color);
+    background: linear-gradient( rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)),url('images/bg.png');
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -318,7 +328,9 @@ button:hover{
     padding: 20px;
     border-radius: 20px;
     gap: 10px;
-    background-color: var(--secondary_color);
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('images/bg.png');
+    background-position: center;
+
     border: var(--orange_border);
 }
 
@@ -346,4 +358,20 @@ button:hover{
     background-color: var(--primary_color);
     color: var(--secondary_color);
     transition: all 0.4S;
+}
+
+
+footer{
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('images/bg.png');
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer p{
+    color: #6d6d6d;
 }
