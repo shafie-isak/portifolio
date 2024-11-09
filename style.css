@@ -2,9 +2,10 @@
     --primary_color: #F0C230;
     --secondary_color: #333333;
     --white: #efefef;
-    --border: 1.5px solid var(--primary_color);
-    --black_shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-    --orange_shadow: 2px 2px 15px rgba(255, 221, 0, 0.5);
+    --orange_border: 1.5px solid var(--primary_color);
+    --black_border:  1px solid var(--secondary_color);
+    --black_shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    --orange_shadow: 1px 1px 5px rgba(255, 221, 0, 0.5);
 
 }
 
@@ -56,12 +57,12 @@ menu ul li{
 }
 
 menu ul li:hover{
-    border-bottom: 2px solid var(--primary_color);
+    border-bottom: var(--orange_border);
     background-color: rgba(255, 165, 0,0.1)
 }
 
 .active{
-    border-bottom: 2px solid var(--primary_color);
+    border-bottom: var(--orange_border);
     background-color: rgba(255, 165, 0,0.1)
 }
 
@@ -78,7 +79,7 @@ menu ul li:hover{
     background-color: transparent;
     font-size: 17px;
     font-weight: 500;
-    border: var(--border);
+    border: var(--orange_border);
     border-radius: 10px;
 }
 
@@ -90,8 +91,6 @@ button:hover{
 .showcase{
     padding-top: 30px;
 }
-
-
 
 .welcoming{
     flex: 1;
@@ -110,11 +109,56 @@ button:hover{
 }
 
 
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary_color);
+}
 
+.about .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 20px; 
+}
+
+.about h1{
+    margin: 20px;
+    color: var(--primary_color);
+    border-bottom: var(--orange_border);
+}
+
+.about img {
+    width: 300px;
+    flex: 1;
+    height: auto; 
+}
+
+.myInfo {
+    flex: 1;
+    padding-left: 20px; 
+}
+
+.myInfo p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+.s_media {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--primary_color);
+    color: var(--secondary_color);
+    margin-right: 10px;
+}
 
 
 .services{
-    background-color: var(--secondary_color);
     padding: 30px 0px;
     display: flex;
     flex-direction: column;
@@ -123,9 +167,8 @@ button:hover{
 }
 .services h1{
     max-width: 100px;
-    color: var(--primary_color);
-    text-align: center;
-    border-bottom: var(--border);
+    color: var(--secondary_color);
+    border-bottom: var(--black_border);
     margin-bottom: 20px;
 }
 
@@ -136,10 +179,10 @@ button:hover{
 
 .card{
     padding: 15px;
-    border: var(--border);
     max-width: 220px;
     border-radius: 10px;
-    background-color: var(--secondary_color);
+    background-color: var(--white);
+    border: var(--orange_border);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,7 +193,7 @@ button:hover{
 .card .icon{
     width: 100px;
     height: 100px;
-    background-color: var(--white);
+    background-color: var(--primary_color);
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -164,15 +207,23 @@ button:hover{
 
 .card h3, .card p{
     text-align: center;
-    color: var(--white);
+    color: var(--secondary_color);
     margin-top: 10px;
 }
 
 .card h3{
-    color: var(--primary_color);
+    color: var(--secondary_color);
 }
 .card:hover{
-    box-shadow: var(--orange_shadow);
+    background-color: var(--primary_color);
+    box-shadow: var(--black_shadow);
+    .icon{
+        background-color: var(--white);
+    }
+    button{
+        border: var(--black_border);
+    }
+    transition: all 0.5s;
 }
 .card .desc a{
      color: #4677ff;
@@ -181,12 +232,11 @@ button:hover{
 .card button{
     margin-top: 20px;
     font-size: 15px;
-    color: var(--primary_color);
+    color: var(--secondary_color);
+    border: var(--orange_border);
 }
 .card button:hover{
-    color: var(--secondary_color);
-    background-color: var(--primary_color);
-
+    color: var(--white);
+    background-color: var(--secondary_color);
+    transition: all 0.4s;
 }
-
-
