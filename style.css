@@ -28,6 +28,7 @@ header{
     box-shadow: var(--black_shadow);
 }
 
+
 .row{
     display: flex;
     justify-content: space-around;
@@ -35,6 +36,10 @@ header{
     padding: 10px 20px;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+header .row{
+    justify-content: space-between;
 }
 
 .container{
@@ -58,7 +63,8 @@ menu ul li{
 
 menu ul li:hover{
     border-bottom: var(--orange_border);
-    background-color: rgba(255, 165, 0,0.1)
+    background-color: rgba(255, 165, 0,0.1);
+    transition: all 0.4s;
 }
 
 .active{
@@ -86,6 +92,7 @@ menu ul li:hover{
 button:hover{
     box-shadow: var(--orange_shadow);
     background-color: var(--primary_color);
+    transition: all 0.4s;
 }
 
 .showcase{
@@ -288,4 +295,55 @@ button:hover{
 .my_skills .card2 h4{
     margin-top: 20px;
     color: var(--primary_color);
+}
+
+.contact{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact h1{
+    color: var(--secondary_color);
+    border-bottom: var(--black_border);
+    margin-bottom: 15px;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 10px;
+    background-color: var(--secondary_color);
+    border: var(--orange_border);
+}
+
+.contact form input, .contact form textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border: var(--orange_border);
+    background-color: transparent;
+    color: var(--white);
+}
+
+.contact form textarea{
+    height: 200px;
+}
+
+.contact form input:focus, .contact form textarea:focus{
+    border: var(--orange_border);
+}
+
+.contact form .btn:hover{
+    background-color: var(--primary_color);
+    color: var(--secondary_color);
+    transition: all 0.4S;
 }
