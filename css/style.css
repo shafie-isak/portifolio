@@ -26,6 +26,7 @@ body{
 
 header{
     box-shadow: var(--black_shadow);
+    background-color: #ffffff;
 }
 
 
@@ -63,13 +64,13 @@ menu ul li{
 
 menu ul li:hover{
     border-bottom: var(--orange_border);
-    background-color: rgba(255, 165, 0,0.1);
+    background-color: rgba(255, 165, 0,0.2);
     transition: all 0.4s;
 }
 
 .active{
     border-bottom: var(--orange_border);
-    background-color: rgba(255, 165, 0,0.1)
+    background-color: rgba(255, 165, 0,0.2)
 }
 
 .profile{
@@ -95,8 +96,10 @@ button:hover{
     transition: all 0.4s;
 }
 
+
+
 .showcase{
-    background-image: url(images/showcase_bg.jpg);
+    background-image: url(../assets/images/showcase_bg.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -117,7 +120,7 @@ button:hover{
 .welcoming p{
     margin-bottom: 30px;
 }
-.welcoming span{
+span{
     color: var(--primary_color);
 }
 
@@ -127,7 +130,7 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)),url('images/bg.png');
+    background: linear-gradient( rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)),url('../assets/images/bg.png');
     background-position: center;
 }
 
@@ -145,30 +148,43 @@ button:hover{
     border-bottom: var(--orange_border);
 }
 
-
+.about img{
+    flex: 0.8;
+    background-color: var(--primary_color);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 
 .myInfo {
     flex: 1;
     padding-left: 20px; 
 }
 
+.myInfo h4{
+    color: var(--white);
+    font-size: 22px;
+    margin: 10px 0px;
+    margin-top: -30px;
+}
+
+.myInfo span{
+    color: var(--primary_color);
+}
+
 .myInfo p {
-    font-size: 18px;
     line-height: 1.6;
     color: var(--white);
-    letter-spacing: 2px;
+    margin: 10px 0px;
 }
 
 .s_media {
-    padding: 10px;
-    border-radius: 50%;
-    background-color: var(--primary_color);
-    color: var(--secondary_color);
+    color: var(--primary_color);
     margin-right: 10px;
+    font-size: 20px;
 }
 
 .s_media:hover{
-    background-color: var(--white);
+    color: var(--white);
     transition: all 0.4s;
 }
 
@@ -216,7 +232,7 @@ button:hover{
 }
 
 .i_design{
-    font-size: 35px;
+    font-size: 30px;
     color: var(--secondary_color);
 }
 
@@ -258,7 +274,7 @@ button:hover{
 
 .my_skills{
     padding: 20px;
-    background: linear-gradient( rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)),url('images/bg.png');
+    background: linear-gradient( rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)),url('../assets/images/bg.png');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -328,7 +344,7 @@ button:hover{
     padding: 20px;
     border-radius: 20px;
     gap: 10px;
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('images/bg.png');
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../assets/images/bg.png');
     background-position: center;
 
     border: var(--orange_border);
@@ -362,16 +378,16 @@ button:hover{
 
 
 footer{
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('images/bg.png');
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../assets/images/bg.png');
     background-position: center;
     background-size: cover;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
 footer p{
+    margin-left: 10px;
     color: #6d6d6d;
 }

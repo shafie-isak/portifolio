@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>shafie isak</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
@@ -11,20 +11,20 @@
 <body>
     <header>
        <div class="row container">
-        <img src="images/logo.png" width="150" alt="logo">
+        <img src="assets/images/logo.png" width="150" alt="logo">
         <menu>
             <ul>
                 <li class="active">Home</li>
                 <li><a href="#services">Services</a></li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="#my_skills">My Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </menu>
-        <button class="btn">Login</button>
-        <div class="profile">
-        </div>
+        <h1>😍</h1>
        </div>
     </header>
+ 
     <main>
         <section class="showcase">
             <div class="row container">
@@ -35,22 +35,26 @@
                     </p>
                     <button class="btn">Contact me</button>
                 </div>
-                <img src="images/my picture.png" width="550" alt="shafie isak">
+                <img src="assets/images/my picture.png" width="550" alt="shafie isak">
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <h1 class="header">About</h1>
             <div class="row container">
-                <img src="/images/my picture.png" width="550" alt="my pic">
+                <img src="assets/images/my picture.png" width="300" alt="my pic">
                 <div class="myInfo">
+                    <h4><span>Crafting Digital Experiences:</span> From Web & App Development to Stunning Visuals</h4>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda numquam 
-                        distinctio maxime aspernatur cum voluptatum eos consequuntur voluptate doloremque 
-                        dolorum, obcaecati cumque, repudiandae veritatis sit dolor, sed alias id expedita
-                        voluptates rem nemo. Illo quam sunt provident blanditiis est dolorum?
+                        As a versatile creator, I blend cutting-edge technology with artistic
+                         vision to deliver exceptional web development, app design, and immersive 
+                         digital content. Whether it's building intuitive user interfaces, designing 
+                         captivating graphics, or bringing ideas to life with motion graphics and 3D 
+                         visualizations, I specialize in transforming concepts into seamless, impactful 
+                         experiences. Let's create something extraordinary together.
                     </p>
                     <a href="#"><i class="fa-regular fa-envelope s_media"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin s_media"></i></a>
+                    <a href="https://github.com/shafie-isak"><i class="fa-brands fa-github s_media"></i></a>
                     <a href="#"><i class="fa-brands fa-facebook-f s_media"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram s_media"></i></a>
                     <a href="#"><i class="fa-brands fa-tiktok s_media"></i></a>
@@ -102,7 +106,7 @@
                     </div>
                 </div>
         </section>
-        <section class="my_skills">
+        <section class="my_skills" id="my_skills">
             <h1>My Skills</h1>
             <div class="row container">
                 <div class="card card2">
@@ -181,7 +185,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact" >
+        <section class="contact" id="contact">
             <h1>Contact</h1>
             <form action="">
                 <input type="email" name="email" id="email" placeholder="Enter your email">
@@ -189,32 +193,17 @@
                 <input type="submit" class="btn" name="submit" value="submit">
             </form>
         </section>
-
-        <footer>
-            <div>
-              <p>Designed with ❤️ by Shafie Isak</p>
-            </div>
-
-            <div>
-              <ul style="list-style: none; padding: 0; margin: 20px 0; display: flex; justify-content: center;">
-                <li style="margin: 0 15px;">
-                  <a href="https://www.linkedin.com/in/shafieisak"><i class="fa-brands fa-linkedin s_media"></i></a>
-                </li>
-                <li style="margin: 0 15px;">
-                  <a href="https://github.com/shafie-isak"><i class="fa-brands fa-github s_media"></i></a>
-                </li>
-                <li style="margin: 0 15px;">
-                    <a href="#"><i class="fa-regular fa-envelope s_media"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div>
-                <p>&copy; 2024 Shafie Isak. All rights reserved.</p>
-            </div>
-          </footer>
-          
-
-
     </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/shafie-isak-a541662a9/"><i class="fa-brands fa-linkedin  s_media"></i></a>
+            <a href="https://github.com/shafie-isak"><i class="fa-brands fa-github  s_media"></i></a>
+            <a href="mailto:shafie@example.com"><i class="fa-regular fa-envelope  s_media"></i></a>
+        </div>
+        <p>&copy; 2024 Shafie Isak. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
